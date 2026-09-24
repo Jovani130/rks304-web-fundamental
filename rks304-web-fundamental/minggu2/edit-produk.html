@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Produk - Admin Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col font-sans">
+  <header class="bg-indigo-600 text-white p-4 shadow flex justify-between items-center">
+    <h1 class="text-xl font-bold">Admin Store</h1>
+    <span class="text-sm">Halo, Admin</span>
+  </header>
+  
+  <div class="flex flex-1">
+    <aside class="w-64 bg-slate-800 text-slate-300 p-4 flex flex-col justify-between">
+      <nav class="space-y-2">
+        <a href="dashboard.html" class="block py-2 px-4 rounded hover:bg-slate-700 hover:text-white">Dashboard</a>
+        <a href="products.html" class="block py-2 px-4 rounded bg-slate-700 text-white">Products</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-slate-700 hover:text-white">Users</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-slate-700 hover:text-white">Setting</a>
+      </nav>
+      <a href="index.html" class="block py-2 px-4 bg-red-600 text-white text-center rounded hover:bg-red-700 font-semibold">Logout</a>
+    </aside>
+
+    <main class="flex-1 p-6">
+      <h2 class="text-2xl font-bold mb-6 text-slate-800">Edit Produk</h2>
+
+      <div class="bg-white p-6 rounded-lg shadow max-w-xl">
+        <form action="products.html" method="GET" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-600 mb-1">Name</label>
+            <input type="text" value="Laptop Gaming LOQ" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-600 mb-1">Stock</label>
+            <input type="number" value="15" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-600 mb-1">Description</label>
+            <textarea rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">Laptop gaming performa tinggi dengan prosesor generasi terbaru.</textarea>
+          </div>
+          <button type="submit" class="bg-indigo-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Update</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <footer class="bg-slate-200 text-center py-3 text-sm text-slate-600 border-t">
+    &copy; 2026 Admin Dashboard. All rights reserved.
+  </footer>
+</body>
+</html>

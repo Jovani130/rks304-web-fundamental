@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MyPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p>Punya pertanyaan, ajakan kolaborasi, atau sekadar ingin berdiskusi? Silakan isi formulir di bawah ini.</p>
+            <br>
+            
+            <!-- Formulir Kontak sesuai Kebutuhan -->
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori / Keperluan</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="" disabled selected>-- Pilih Keperluan --</option>
+                        <option value="konsultasi">Konsultasi</option>
+                        <option value="kolaborasi">Kolaborasi Proyek</option>
+                        <option value="umum">Pertanyaan Umum</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jovani Aditia. Tugas Praktikum Lab Minggu 1.</p>
+    </footer>
+
+</body>
+</html>
